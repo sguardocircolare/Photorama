@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.11/21010
 // Filename: PHOTORAMA.ggsk
-// Generated 2026-11-20T13:00:53
+// Generated 2026-11-20T13:14:54
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_sounds_splashscreen', 2, false, { ignoreInState: 1  });
@@ -8022,10 +8022,10 @@ alert("The current view has been copied.");
 				me._map.ggCurrentLogicStateSize = newLogicStateSize;
 				me._map.style.transition='width 0s, height 0s';
 				if (me._map.ggCurrentLogicStateSize == 0) {
-					me._map.style.width='200px';
-					me._map.style.height='150px';
-					me._map.style.left = 'calc(50% - (200px / 2) - (2px / 2))';
-					me._map.style.top = 'calc(50% - (150px / 2) - (2px / 2) + 12%)';
+					me._map.style.width='300px';
+					me._map.style.height='225px';
+					me._map.style.left = 'calc(50% - (300px / 2) - (2px / 2))';
+					me._map.style.top = 'calc(50% - (225px / 2) - (2px / 2) + 12%)';
 					skin.updateSize(me._map);
 				}
 				else {
@@ -11106,12 +11106,6 @@ alert("The current view has been copied.");
 			{
 				newLogicStateVisible = 0;
 			}
-			else if (
-				((player.getIsMobile() == true))
-			)
-			{
-				newLogicStateVisible = 1;
-			}
 			else {
 				newLogicStateVisible = -1;
 			}
@@ -11121,10 +11115,6 @@ alert("The current view has been copied.");
 				if (me._image_hs_popup.ggCurrentLogicStateVisible == 0) {
 					me._image_hs_popup.style.visibility=(Number(me._image_hs_popup.style.opacity)>0||!me._image_hs_popup.style.opacity)?'inherit':'hidden';
 					me._image_hs_popup.ggVisible=true;
-				}
-				else if (me._image_hs_popup.ggCurrentLogicStateVisible == 1) {
-					me._image_hs_popup.style.visibility="hidden";
-					me._image_hs_popup.ggVisible=false;
 				}
 				else {
 					me._image_hs_popup.style.visibility="hidden";
@@ -11666,10 +11656,26 @@ alert("The current view has been copied.");
 			return me.ggNodeId;
 		}
 		me._ht_image_icon.onclick=function (e) {
-			me._image_hs_popup.ggVisible = !me._image_hs_popup.ggVisible;
-			var flag=me._image_hs_popup.ggVisible;
-			me._image_hs_popup.style.transition='none';
-			me._image_hs_popup.style.visibility=((flag)&&(Number(me._image_hs_popup.style.opacity)>0||!me._image_hs_popup.style.opacity))?'inherit':'hidden';
+			if (
+				(
+					((player.getIsMobile() == false))
+				)
+			) {
+				me._image_hs_popup.ggVisible = !me._image_hs_popup.ggVisible;
+				var flag=me._image_hs_popup.ggVisible;
+				me._image_hs_popup.style.transition='none';
+				me._image_hs_popup.style.visibility=((flag)&&(Number(me._image_hs_popup.style.opacity)>0||!me._image_hs_popup.style.opacity))?'inherit':'hidden';
+			}
+			if (
+				(
+					((player.getIsMobile() == true))
+				)
+			) {
+				skin._image_hs_popup_fullscreen.ggVisible = !skin._image_hs_popup_fullscreen.ggVisible;
+				var flag=skin._image_hs_popup_fullscreen.ggVisible;
+				skin._image_hs_popup_fullscreen.style.transition='none';
+				skin._image_hs_popup_fullscreen.style.visibility=((flag)&&(Number(skin._image_hs_popup_fullscreen.style.opacity)>0||!skin._image_hs_popup_fullscreen.style.opacity))?'inherit':'hidden';
+			}
 		}
 		me._ht_image_icon.onmouseenter=function (e) {
 			me._ht_image_icon__img.style.visibility='hidden';
@@ -13188,10 +13194,10 @@ alert("The current view has been copied.");
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_63 = setInterval(() => {
+				let pdfInterval_73 = setInterval(() => {
 					if (skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication && skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_hs_popup_pdf.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_63);
+						clearInterval(pdfInterval_73);
 					}
 				}, 50);
 			}
@@ -13316,10 +13322,10 @@ alert("The current view has been copied.");
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_64 = setInterval(() => {
+				let pdfInterval_74 = setInterval(() => {
 					if (skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_64);
+						clearInterval(pdfInterval_74);
 					}
 				}, 50);
 			}
