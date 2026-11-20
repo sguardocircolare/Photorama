@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.11/21010
 // Filename: PHOTORAMA.ggsk
-// Generated 2026-11-20T12:29:34
+// Generated 2026-11-20T12:48:40
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_sounds_splashscreen', 2, false, { ignoreInState: 1  });
@@ -7792,13 +7792,13 @@ alert("The current view has been copied.");
 		el.ggType='svg';
 		hs ='';
 		hs+='cursor : pointer;';
-		hs+='height : 53.8462%;';
-		hs+='left : calc(50% - ((20% + 0px) / 2) + 30%);';
+		hs+='height : 56.4103%;';
+		hs+='left : calc(50% - ((21% + 0px) / 2) + 30%);';
 		hs+='opacity : 0.9;';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((53.8462% + 0px) / 2) + 0%);';
+		hs+='top : calc(50% - ((56.4103% + 0px) / 2) + 0%);';
 		hs+='visibility : inherit;';
-		hs+='width : 20%;';
+		hs+='width : 21%;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
@@ -7814,8 +7814,33 @@ alert("The current view has been copied.");
 			}
 			return player.getCurrentNode();
 		}
+		me._bussola.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player.getUseGyro() == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._bussola.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._bussola.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._bussola.style.transition='';
+				if (me._bussola.ggCurrentLogicStateVisible == 0) {
+					me._bussola.style.visibility="hidden";
+					me._bussola.ggVisible=false;
+				}
+				else {
+					me._bussola.style.visibility=(Number(me._bussola.style.opacity)>0||!me._bussola.style.opacity)?'inherit':'hidden';
+					me._bussola.ggVisible=true;
+				}
+			}
+		}
+		me._bussola.logicBlock_visible();
 		me._bussola.onclick=function (e) {
-			player.setUseGyro(!(player.getUseGyro()));
+			player.setUseGyro(true);
 		}
 		me._bussola.ggUpdatePosition=function (useTransition) {
 		}
@@ -7861,23 +7886,51 @@ alert("The current view has been copied.");
 			}
 			return player.getCurrentNode();
 		}
+		me._bussola_no.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				((player.getUseGyro() == true))
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._bussola_no.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._bussola_no.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._bussola_no.style.transition='';
+				if (me._bussola_no.ggCurrentLogicStateVisible == 0) {
+					me._bussola_no.style.visibility=(Number(me._bussola_no.style.opacity)>0||!me._bussola_no.style.opacity)?'inherit':'hidden';
+					me._bussola_no.ggVisible=true;
+				}
+				else {
+					me._bussola_no.style.visibility="hidden";
+					me._bussola_no.ggVisible=false;
+				}
+			}
+		}
+		me._bussola_no.logicBlock_visible();
+		me._bussola_no.onclick=function (e) {
+			player.setUseGyro(false);
+		}
 		me._bussola_no.ggUpdatePosition=function (useTransition) {
 		}
 		me._container_1.appendChild(me._bussola_no);
 		me.divSkin.appendChild(me._container_1);
 		el=me._map_popup=document.createElement('div');
 		el.ggId="map_popup";
-		el.ggDx=0.14;
-		el.ggDy=-0.01;
+		el.ggDx=-0.14;
+		el.ggDy=0;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_container ";
 		el.ggType='container';
 		hs ='';
 		hs+='height : 100%;';
-		hs+='left : calc(50% - ((100% + 0px) / 2) + 0.14%);';
+		hs+='left : calc(50% - ((100% + 0px) / 2) - 0.14%);';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((100% + 0px) / 2) - 0.01%);';
+		hs+='top : calc(50% - ((100% + 0px) / 2) + 0%);';
 		hs+='visibility : hidden;';
 		hs+='width : 100%;';
 		hs+='pointer-events:none;';
@@ -7924,7 +7977,7 @@ alert("The current view has been copied.");
 		el.ggMapId = 'PlanOGGI';
 		el.ggId="Map";
 		el.ggDx=0;
-		el.ggDy=10;
+		el.ggDy=12;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_map ";
@@ -7936,7 +7989,7 @@ alert("The current view has been copied.");
 		hs+='opacity : 0.9;';
 		hs+='overflow : hidden;';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((300px + 2px) / 2) + 10%);';
+		hs+='top : calc(50% - ((300px + 2px) / 2) + 12%);';
 		hs+='visibility : inherit;';
 		hs+='width : 400px;';
 		hs+='pointer-events:auto;';
@@ -8246,6 +8299,8 @@ alert("The current view has been copied.");
 		me._video_url_popup_phone_play.logicBlock_visible();
 		me.elementMouseOver['video_url_popup_phone_play']=false;
 		me._container_1.logicBlock_size();
+		me._bussola.logicBlock_visible();
+		me._bussola_no.logicBlock_visible();
 		me._map_popup.logicBlock_visible();
 		me._map.ggMarkerInstances=[];
 		me._map.ggLastNodeId=null;
@@ -8565,6 +8620,8 @@ alert("The current view has been copied.");
 			me._video_file_popup_phone_play.logicBlock_visible();
 			me._video_url_popup_phone.logicBlock_visible();
 			me._video_url_popup_phone_play.logicBlock_visible();
+			me._bussola.logicBlock_visible();
+			me._bussola_no.logicBlock_visible();
 			me._map_popup.logicBlock_visible();
 			for (var i=0; i < me._map.ggMarkerInstances.length; i++) {
 				me._map.ggMarkerInstances[i].ggEvent_changenode();
@@ -8735,6 +8792,10 @@ alert("The current view has been copied.");
 			me._map.ggClearMap();
 			me._map.ggInitMap(false);
 			me._map.ggInitMapMarkers(true);
+		});
+		player.addListener('gyrochanged', function(event) {
+			me._bussola.logicBlock_visible();
+			me._bussola_no.logicBlock_visible();
 		});
 		player.addListener('positionchanged', function(event) {
 			me._floorplan_el_phone.ggRadar.update();
@@ -11006,7 +11067,8 @@ alert("The current view has been copied.");
 		me._image_hs_popup.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				(((player.getVariableValue('vis_image_hs_popups') !== null) && (player.getVariableValue('vis_image_hs_popups')).indexOf("<"+me.hotspot.id+">") != -1))
+				(((player.getVariableValue('vis_image_hs_popups') !== null) && (player.getVariableValue('vis_image_hs_popups')).indexOf("<"+me.hotspot.id+">") != -1)) && 
+				((player.getIsMobile() == false))
 			)
 			{
 				newLogicStateVisible = 0;
@@ -13083,10 +13145,10 @@ alert("The current view has been copied.");
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_9 = setInterval(() => {
+				let pdfInterval_57 = setInterval(() => {
 					if (skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication && skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_hs_popup_pdf.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_9);
+						clearInterval(pdfInterval_57);
 					}
 				}, 50);
 			}
@@ -13211,10 +13273,10 @@ alert("The current view has been copied.");
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_10 = setInterval(() => {
+				let pdfInterval_58 = setInterval(() => {
 					if (skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_10);
+						clearInterval(pdfInterval_58);
 					}
 				}, 50);
 			}
