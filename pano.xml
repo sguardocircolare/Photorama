@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node3" appversion="7.1.11" hassounds="0" apprev="21010">
+  <panorama id="node3">
+    <input levelbias="0.400" leveltilesize="510" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3111" levelingpitch="0" height="3111" levelbiashidpi="1.000" overlap="1" levelingroll="0">
+      <level width="3111" height="3111" predecode="0" preload="0"/>
+      <level width="1555" height="1555" predecode="0" preload="0"/>
+      <level width="777" height="777" predecode="0" preload="0"/>
+      <level width="388" height="388" predecode="1" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="-31.8">
+      <start pan="0" projection="4" fov="100" tilt="0"/>
+      <flyin pan="0" projection="9" fov="170" tilt="-90"/>
+      <min pan="0" fovpixel="2" tilt="-60"/>
+      <max pan="360" fovstereographic="330" fov="140" fovfisheye="360" scaletofit="1" tilt="60"/>
+    </view>
+    <userdata tags="OGGI" longitude="" author="" description="" heading="-31.8" title="" copyright="" comment="" nodeid="node3" datetime="10/06/2025 07:47" info="" source="" latitude="" customnodeid="oggi427">
+      <mapcoords x="1.62872" x_floorplan_percent="62.7513" y="-1.04645" mapid="PlanOGGI" y_floorplan_percent="53.7377"/>
+    </userdata>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label enabled="1" background="1" backgroundalpha="1" border="1" bordercolor="0x000000" textalpha="1" backgroundcolor="0xffffff" width="180" height="20" wordwrap="1" borderalpha="1" borderradius="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" handcursor="1" borderalpha="1" backgroundcolor="0x0000ff"/>
+      <hotspot pan="-252.5" title="" target="" skinid="ht_node" url="{node1}" id="Point01" description="" tilt="4.69"/>
+    </hotspots>
+    <media/>
+    <transition enabled="1" type="crossdissolve" delay="none" zoomafterinfov="140" zoomspeed="2" blendtime="1" zoomoutpause="1" zoomfov="40" zoomin="0" zoomafteroutfov="40" blendcolor="0x000000" softedge="0" zoomout="0"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" lockedkeyboardzoom="0" lockedmouse="0" simulatemass="1" lockedwheel="0" zoomcentercursor="1" hideabout="0" rubberband="0" contextfullscreen="1" invertwheel="0" speedwheel="1" lockedkeyboard="0" invertcontrol="1" contextvr="1" dblclickfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node1">
+    <input levelbias="0.400" leveltilesize="510" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3114" levelingpitch="0" height="3114" levelbiashidpi="1.000" overlap="1" levelingroll="0">
+      <level width="3114" height="3114" predecode="0" preload="0"/>
+      <level width="1557" height="1557" predecode="0" preload="0"/>
+      <level width="778" height="778" predecode="0" preload="0"/>
+      <level width="389" height="389" predecode="1" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="58.4">
+      <start pan="0" projection="4" fov="100" tilt="0"/>
+      <flyin pan="0" projection="9" fov="170" tilt="-90"/>
+      <min pan="0" fov="5" tilt="-60"/>
+      <max pan="360" fovstereographic="330" fov="140" fovfisheye="360" scaletofit="1" tilt="60"/>
+    </view>
+    <userdata tags="OGGI" longitude="" author="" description="" heading="58.4" title="" copyright="" comment="" nodeid="node1" datetime="" info="" source="" latitude="" customnodeid="oggi426">
+      <mapcoords x="1.34583" x_floorplan_percent="51.8519" y="-1.14532" mapid="PlanOGGI" y_floorplan_percent="58.8152"/>
+    </userdata>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label enabled="1" background="1" backgroundalpha="1" border="1" bordercolor="0x000000" textalpha="1" backgroundcolor="0xffffff" width="180" height="20" wordwrap="1" borderalpha="1" borderradius="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" handcursor="1" borderalpha="1" backgroundcolor="0x0000ff"/>
+      <hotspot pan="-161.73" title="" target="" skinid="ht_node" url="{node5}" id="Point01" description="" tilt="-3.13"/>
+      <hotspot pan="-82.67" title="" target="" skinid="ht_node" url="{node3}" id="Point02" description="" tilt="-2.67"/>
+    </hotspots>
+    <media/>
+    <transition enabled="1" type="crossdissolve" delay="none" zoomafterinfov="140" zoomspeed="2" blendtime="1" zoomoutpause="1" zoomfov="40" zoomin="0" zoomafteroutfov="40" blendcolor="0x000000" softedge="0" zoomout="0"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" lockedkeyboardzoom="0" lockedmouse="0" simulatemass="1" lockedwheel="0" zoomcentercursor="1" hideabout="0" rubberband="0" contextfullscreen="1" invertwheel="0" speedwheel="1" lockedkeyboard="0" invertcontrol="1" contextvr="1" dblclickfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node5">
+    <input levelbias="0.400" leveltilesize="510" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" width="3111" levelingpitch="0" height="3111" levelbiashidpi="1.000" overlap="1" levelingroll="0">
+      <level width="3111" height="3111" predecode="0" preload="0"/>
+      <level width="1555" height="1555" predecode="0" preload="0"/>
+      <level width="777" height="777" predecode="0" preload="0"/>
+      <level width="388" height="388" predecode="1" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="95.9">
+      <start pan="0" projection="4" fov="100" tilt="0"/>
+      <flyin pan="0" projection="9" fov="170" tilt="-90"/>
+      <min pan="0" fovpixel="2" tilt="-60"/>
+      <max pan="360" fovstereographic="330" fov="140" fovfisheye="360" scaletofit="1" tilt="60"/>
+    </view>
+    <userdata tags="OGGI" longitude="" author="" description="" heading="95.9" title="" copyright="" comment="" nodeid="node5" datetime="10/06/2025 07:28" info="" source="" latitude="" customnodeid="oggi428">
+      <mapcoords x="0.612488" x_floorplan_percent="23.5979" y="-1.20026" mapid="PlanOGGI" y_floorplan_percent="61.6361"/>
+    </userdata>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label enabled="1" background="1" backgroundalpha="1" border="1" bordercolor="0x000000" textalpha="1" backgroundcolor="0xffffff" width="180" height="20" wordwrap="1" borderalpha="1" borderradius="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" handcursor="1" borderalpha="1" backgroundcolor="0x0000ff"/>
+      <hotspot pan="-52.35" title="" target="" skinid="ht_node" url="{node1}" id="Point01" description="" tilt="-8.82"/>
+    </hotspots>
+    <media/>
+    <transition enabled="1" type="crossdissolve" delay="none" zoomafterinfov="140" zoomspeed="2" blendtime="1" zoomoutpause="1" zoomfov="40" zoomin="0" zoomafteroutfov="40" blendcolor="0x000000" softedge="0" zoomout="0"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" lockedkeyboardzoom="0" lockedmouse="0" simulatemass="1" lockedwheel="0" zoomcentercursor="1" hideabout="0" rubberband="0" contextfullscreen="1" invertwheel="0" speedwheel="1" lockedkeyboard="0" invertcontrol="1" contextvr="1" dblclickfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node2">
+    <input levelbias="0.400" leveltilesize="510" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1215" levelingpitch="0" height="1215" levelbiashidpi="1.000" overlap="1" levelingroll="0">
+      <level width="1215" height="1215" predecode="0" preload="0"/>
+      <level width="607" height="607" predecode="0" preload="0"/>
+      <level width="303" height="303" predecode="1" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="-31.8">
+      <start pan="0" projection="4" fov="100" tilt="0"/>
+      <flyin pan="0" projection="9" fov="170" tilt="-90"/>
+      <min pan="0" fovpixel="2" tilt="-30"/>
+      <max pan="360" fovstereographic="330" fov="140" fovfisheye="360" scaletofit="1" tilt="30"/>
+    </view>
+    <userdata tags="1900" longitude="" author="" description="" heading="-31.8" title="" copyright="" comment="" nodeid="node2" datetime="" info="" source="" latitude="" customnodeid="ieri427">
+      <mapcoords x="1.63422" x_floorplan_percent="62.8964" y="-0.986023" mapid="Plan1900" y_floorplan_percent="50.6347"/>
+    </userdata>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label enabled="1" background="1" backgroundalpha="1" border="1" bordercolor="0x000000" textalpha="1" backgroundcolor="0xffffff" width="180" height="20" wordwrap="1" borderalpha="1" borderradius="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" handcursor="1" borderalpha="1" backgroundcolor="0x0000ff"/>
+      <hotspot pan="-280.42" title="" target="" skinid="ht_node" url="{node6}" id="Point01" description="" tilt="-2.18"/>
+      <hotspot pan="-151.69" title="Foro Umberto I" target="" skinid="ht_image" url="images/426_Marina.jpg" id="Point02" description="" tilt="7.55"/>
+    </hotspots>
+    <media/>
+    <transition enabled="1" type="crossdissolve" delay="none" zoomafterinfov="140" zoomspeed="2" blendtime="1" zoomoutpause="1" zoomfov="40" zoomin="0" zoomafteroutfov="40" blendcolor="0x000000" softedge="0" zoomout="0"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" lockedkeyboardzoom="0" lockedmouse="0" simulatemass="1" lockedwheel="0" zoomcentercursor="1" hideabout="0" rubberband="0" contextfullscreen="1" invertwheel="0" speedwheel="1" lockedkeyboard="0" invertcontrol="1" contextvr="1" dblclickfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node6">
+    <input levelbias="0.400" leveltilesize="510" leveltileurl="tiles/node6/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1215" levelingpitch="0" height="1215" levelbiashidpi="1.000" overlap="1" levelingroll="0">
+      <level width="1215" height="1215" predecode="0" preload="0"/>
+      <level width="607" height="607" predecode="0" preload="0"/>
+      <level width="303" height="303" predecode="1" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="58.4">
+      <start pan="0" projection="4" fov="100" tilt="0"/>
+      <flyin pan="0" projection="9" fov="170" tilt="-90"/>
+      <min pan="0" fovpixel="2" tilt="-30"/>
+      <max pan="360" fovstereographic="330" fov="140" fovfisheye="360" scaletofit="1" tilt="30"/>
+    </view>
+    <userdata tags="1900" longitude="" author="" description="" heading="58.4" title="" copyright="" comment="" nodeid="node6" datetime="24/07/2024 15:31" info="" source="" latitude="" customnodeid="ieri426">
+      <mapcoords x="1.38977" x_floorplan_percent="53.4884" y="-1.04095" mapid="Plan1900" y_floorplan_percent="53.4556"/>
+    </userdata>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label enabled="1" background="1" backgroundalpha="1" border="1" bordercolor="0x000000" textalpha="1" backgroundcolor="0xffffff" width="180" height="20" wordwrap="1" borderalpha="1" borderradius="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" handcursor="1" borderalpha="1" backgroundcolor="0x0000ff"/>
+      <hotspot pan="-163.7" title="" target="" skinid="ht_node" url="{node4}" id="Point01" description="" tilt="-3.38"/>
+      <hotspot pan="-29.18" title="" target="" skinid="ht_node" url="{node2}" id="Point02" description="" tilt="-3.08"/>
+      <hotspot pan="-145.9" title="Chiesa di S.Maria alla Catena" target="" skinid="ht_image" url="images/427_Catena.jpeg" id="Point03" description="" tilt="13.04"/>
+      <hotspot pan="-287.62" title="Castello a Mare e Monte Pellegrino" target="" skinid="ht_image" url="images/427_Castello a mare.png" id="Point04" description="" tilt="6.85"/>
+    </hotspots>
+    <media/>
+    <transition enabled="1" type="crossdissolve" delay="none" zoomafterinfov="140" zoomspeed="2" blendtime="1" zoomoutpause="1" zoomfov="40" zoomin="0" zoomafteroutfov="40" blendcolor="0x000000" softedge="0" zoomout="0"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" lockedkeyboardzoom="0" lockedmouse="0" simulatemass="1" lockedwheel="0" zoomcentercursor="1" hideabout="0" rubberband="0" contextfullscreen="1" invertwheel="0" speedwheel="1" lockedkeyboard="0" invertcontrol="1" contextvr="1" dblclickfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <panorama id="node4">
+    <input levelbias="0.400" leveltilesize="510" leveltileurl="tiles/node4/cf_%c/l_%l/c_%x/tile_%y.jpg" width="1215" levelingpitch="0" height="1215" levelbiashidpi="1.000" overlap="1" levelingroll="0">
+      <level width="1215" height="1215" predecode="0" preload="0"/>
+      <level width="607" height="607" predecode="0" preload="0"/>
+      <level width="303" height="303" predecode="1" preload="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view fovmode="2" pannorth="95.9">
+      <start pan="0" projection="4" fov="100" tilt="0"/>
+      <flyin pan="0" projection="9" fov="170" tilt="-90"/>
+      <min pan="0" fovpixel="2" tilt="-30"/>
+      <max pan="360" fovstereographic="330" fov="140" fovfisheye="360" scaletofit="1" tilt="30"/>
+    </view>
+    <userdata tags="1900" longitude="" author="" description="" heading="95.9" title="" copyright="" comment="" nodeid="node4" datetime="24/07/2024 15:31" info="" source="" latitude="" customnodeid="ieri428">
+      <mapcoords x="0.593262" x_floorplan_percent="22.833" y="-1.23322" mapid="Plan1900" y_floorplan_percent="63.3286"/>
+    </userdata>
+    <hotspots width="180" height="20" smoothmovement="0" wordwrap="1">
+      <label enabled="1" background="1" backgroundalpha="1" border="1" bordercolor="0x000000" textalpha="1" backgroundcolor="0xffffff" width="180" height="20" wordwrap="1" borderalpha="1" borderradius="1" textcolor="0x000000"/>
+      <polystyle backgroundalpha="0.25098" bordercolor="0x0000ff" mode="0" handcursor="1" borderalpha="1" backgroundcolor="0x0000ff"/>
+      <hotspot pan="-74.77" title="" target="" skinid="ht_node" url="{node6}" id="Point01" description="" tilt="-1.6"/>
+      <hotspot pan="-275.7" title="Chiesa di S.Maria di Piedigrotta" target="" skinid="ht_image" url="images/428_Piedigrotta.jpg" id="Point02" description="" tilt="10.31"/>
+    </hotspots>
+    <media/>
+    <transition enabled="1" type="crossdissolve" delay="none" zoomafterinfov="140" zoomspeed="2" blendtime="1" zoomoutpause="1" zoomfov="40" zoomin="0" zoomafteroutfov="40" blendcolor="0x000000" softedge="0" zoomout="0"/>
+    <animation clipsrandom="0" animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control contextprojections="0" lockedkeyboardzoom="0" lockedmouse="0" simulatemass="1" lockedwheel="0" zoomcentercursor="1" hideabout="0" rubberband="0" contextfullscreen="1" invertwheel="0" speedwheel="1" lockedkeyboard="0" invertcontrol="1" contextvr="1" dblclickfullscreen="0" sensitivity="8"/>
+  </panorama>
+  <masternode>
+    <userdata title="" tags="" copyright="" author="" comment="" description=""/>
+    <animationsequences>
+      <sequence title="Animation01"/>
+    </animationsequences>
+  </masternode>
+  <map bgcolor="rgba(255, 255, 255, 1)" type="file" index="0" id="PlanOGGI" zoomlevels="1" title="" width="945" transparent="0" tileformat="jpg" height="709" floorplannorth="0" crispedges="0"/>
+  <map bgcolor="rgba(255, 255, 255, 1)" type="file" index="1" id="Plan1900" zoomlevels="1" title="" width="946" transparent="0" tileformat="jpg" height="709" floorplannorth="359.67" crispedges="0"/>
+</tour>
