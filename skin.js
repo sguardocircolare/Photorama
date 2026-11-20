@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 7.1.11/21010
 // Filename: PHOTORAMA.ggsk
-// Generated 2026-11-20T12:48:40
+// Generated 2026-11-20T13:00:53
 
 function pano2vrSkin(player,base) {
 	player.addVariable('vis_sounds_splashscreen', 2, false, { ignoreInState: 1  });
@@ -7785,7 +7785,7 @@ alert("The current view has been copied.");
 		el.ggSubElement = els;
 		el.ggId="BUSSOLA";
 		el.ggDx=30;
-		el.ggDy=0;
+		el.ggDy=-1;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=true;
 		el.className="ggskin ggskin_svg ";
@@ -7796,7 +7796,7 @@ alert("The current view has been copied.");
 		hs+='left : calc(50% - ((21% + 0px) / 2) + 30%);';
 		hs+='opacity : 0.9;';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((56.4103% + 0px) / 2) + 0%);';
+		hs+='top : calc(50% - ((56.4103% + 0px) / 2) - 1%);';
 		hs+='visibility : inherit;';
 		hs+='width : 21%;';
 		hs+='pointer-events:auto;';
@@ -7857,7 +7857,7 @@ alert("The current view has been copied.");
 		el.ggSubElement = els;
 		el.ggId="BUSSOLA NO";
 		el.ggDx=30;
-		el.ggDy=0;
+		el.ggDy=-1;
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1,def:'' };
 		el.ggVisible=false;
 		el.className="ggskin ggskin_svg ";
@@ -7865,12 +7865,12 @@ alert("The current view has been copied.");
 		hs ='';
 		hs+='cursor : pointer;';
 		hs+='height : 53.8462%;';
-		hs+='left : calc(50% - ((20% + 0px) / 2) + 30%);';
+		hs+='left : calc(50% - ((21% + 0px) / 2) + 30%);';
 		hs+='opacity : 0.9;';
 		hs+='position : absolute;';
-		hs+='top : calc(50% - ((53.8462% + 0px) / 2) + 0%);';
+		hs+='top : calc(50% - ((53.8462% + 0px) / 2) - 1%);';
 		hs+='visibility : hidden;';
-		hs+='width : 20%;';
+		hs+='width : 21%;';
 		hs+='pointer-events:auto;';
 		el.setAttribute('style',hs);
 		el.style.transformOrigin='50% 50%';
@@ -8007,6 +8007,38 @@ alert("The current view has been copied.");
 			}
 			return player.getCurrentNode();
 		}
+		me._map.logicBlock_size = function() {
+			var newLogicStateSize;
+			if (
+				((player.getIsMobile() == true))
+			)
+			{
+				newLogicStateSize = 0;
+			}
+			else {
+				newLogicStateSize = -1;
+			}
+			if (me._map.ggCurrentLogicStateSize != newLogicStateSize) {
+				me._map.ggCurrentLogicStateSize = newLogicStateSize;
+				me._map.style.transition='width 0s, height 0s';
+				if (me._map.ggCurrentLogicStateSize == 0) {
+					me._map.style.width='200px';
+					me._map.style.height='150px';
+					me._map.style.left = 'calc(50% - (200px / 2) - (2px / 2))';
+					me._map.style.top = 'calc(50% - (150px / 2) - (2px / 2) + 12%)';
+					skin.updateSize(me._map);
+				}
+				else {
+					me._map.style.width='400px';
+					me._map.style.height='300px';
+					me._map.style.left = 'calc(50% - (400px / 2) - (2px / 2))';
+					me._map.style.top = 'calc(50% - (300px / 2) - (2px / 2) + 12%)';
+					skin.updateSize(me._map);
+				}
+			}
+		}
+		me._map.logicBlock_size();
+		me._map.ggCurrentLogicStateSize = -1;
 		me._map.ggUpdateConditionResize=function () {
 			var mapDetails = player.getMapDetails(me._map.ggMapId);
 			if (mapDetails.hasOwnProperty('title')) {
@@ -8444,6 +8476,7 @@ alert("The current view has been copied.");
 			me._map.ggMarkerInstances=[];
 			me._map.ggSimpleFloorplanMarkerArray=[];
 		}
+		me._map.logicBlock_size();
 		player.addListener('activehotspotchanged', function(event) {
 			if (hotspotTemplates.hasOwnProperty('ht_video_youtube')) {
 				for(var i = 0; i < hotspotTemplates['ht_video_youtube'].length; i++) {
@@ -8789,6 +8822,7 @@ alert("The current view has been copied.");
 			me._video_url_popup_phone_play.logicBlock_visible();
 			me._container_1.logicBlock_size();
 			me._map_popup.logicBlock_visible();
+			me._map.logicBlock_size();
 			me._map.ggClearMap();
 			me._map.ggInitMap(false);
 			me._map.ggInitMapMarkers(true);
@@ -11067,11 +11101,16 @@ alert("The current view has been copied.");
 		me._image_hs_popup.logicBlock_visible = function() {
 			var newLogicStateVisible;
 			if (
-				(((player.getVariableValue('vis_image_hs_popups') !== null) && (player.getVariableValue('vis_image_hs_popups')).indexOf("<"+me.hotspot.id+">") != -1)) && 
-				((player.getIsMobile() == false))
+				(((player.getVariableValue('vis_image_hs_popups') !== null) && (player.getVariableValue('vis_image_hs_popups')).indexOf("<"+me.hotspot.id+">") != -1))
 			)
 			{
 				newLogicStateVisible = 0;
+			}
+			else if (
+				((player.getIsMobile() == true))
+			)
+			{
+				newLogicStateVisible = 1;
 			}
 			else {
 				newLogicStateVisible = -1;
@@ -11082,6 +11121,10 @@ alert("The current view has been copied.");
 				if (me._image_hs_popup.ggCurrentLogicStateVisible == 0) {
 					me._image_hs_popup.style.visibility=(Number(me._image_hs_popup.style.opacity)>0||!me._image_hs_popup.style.opacity)?'inherit':'hidden';
 					me._image_hs_popup.ggVisible=true;
+				}
+				else if (me._image_hs_popup.ggCurrentLogicStateVisible == 1) {
+					me._image_hs_popup.style.visibility="hidden";
+					me._image_hs_popup.ggVisible=false;
 				}
 				else {
 					me._image_hs_popup.style.visibility="hidden";
@@ -13145,10 +13188,10 @@ alert("The current view has been copied.");
 					((player.getVariableValue('resp_phone') == false))
 				)
 			) {
-				let pdfInterval_57 = setInterval(() => {
+				let pdfInterval_63 = setInterval(() => {
 					if (skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication && skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_hs_popup_pdf__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_hs_popup_pdf.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_57);
+						clearInterval(pdfInterval_63);
 					}
 				}, 50);
 			}
@@ -13273,10 +13316,10 @@ alert("The current view has been copied.");
 					((player.getVariableValue('resp_phone') == true))
 				)
 			) {
-				let pdfInterval_58 = setInterval(() => {
+				let pdfInterval_64 = setInterval(() => {
 					if (skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.initialized && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.downloadComplete && skin._pdf_popup_phone__pdf.contentWindow.PDFViewerApplication.pdfViewer._pageViewsReady) {
 						skin._pdf_popup_phone.ggSetCurrentPage(Number(player._(me.hotspot.target)));
-						clearInterval(pdfInterval_58);
+						clearInterval(pdfInterval_64);
 					}
 				}, 50);
 			}
